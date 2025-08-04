@@ -11,7 +11,7 @@ interface ThemeState {
 }
 
 export const useTheme = create<ThemeState>((set , get)=>({
-    theme : "dark" ,
+    theme : "dracula" ,
     themeMenuOpen : false ,
     handleThemeChange(newTheme) {
     set({theme : newTheme , themeMenuOpen : false})

@@ -1,4 +1,5 @@
-"use client";
+"use client"
+
 import CodeEditor from "./ui/CodeEditor";
 import Intro from "./ui/Intro";
 import BackgroundParticles from "@/components/shared/BackgroundParticles";

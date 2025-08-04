@@ -29,7 +29,7 @@ const codeLineVariants: Variants = {
   }),
 };
 
-const sectionVariants : Variants = {
+const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: (i: number) => ({
     opacity: 1,
@@ -38,7 +38,7 @@ const sectionVariants : Variants = {
   }),
 };
 
-const textVariants : Variants = {
+const textVariants: Variants = {
   hidden: { opacity: 0, x: -20 },
   visible: (i: number) => ({
     opacity: 1,
@@ -47,6 +47,45 @@ const textVariants : Variants = {
   }),
 };
 
+const aboutPageSectionVariants: Variants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.3, type: "spring", stiffness: 120, damping: 14 },
+  }),
+};
+
+const aboutPageTextVariants: Variants = {
+  hidden: { opacity: 0, x: -20 },
+  visible: (i: number) => ({
+    opacity: 1,
+    x: 0,
+    transition: { delay: i * 0.05, duration: 0.4 },
+  }),
+};
+
+const aboutPageSubtitleVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.5, delay: 0.5, staggerChildren: 0.05 },
+  },
+  exit: { opacity: 0 },
+};
+
+const aboutPageLetterVariants: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
+
 export {
-    codeLineVariants , codeEditorContainerVariants , sectionVariants , textVariants
-}
+  codeLineVariants,
+  codeEditorContainerVariants,
+  sectionVariants,
+  textVariants,
+  aboutPageSectionVariants,
+  aboutPageTextVariants,
+  aboutPageSubtitleVariants,
+  aboutPageLetterVariants,
+};

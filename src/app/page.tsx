@@ -1,5 +1,3 @@
-"use client"
-
 import Header from "@/components/home/header/Header";
 import About from "@/components/home/about/About";
 import Projects from "@/components/home/projects/FeaturedProjects";

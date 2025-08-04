@@ -1,9 +1,14 @@
-import React from 'react'
+import Hero from "@/components/about/hero/Hero";
+import Journey from "@/components/about/journey/Journey";
+;
 
 const AboutPage = () => {
   return (
-    <div>AboutPage</div>
-  )
-}
+    <main className="min-h-screen bg-base-100">
+      <Hero/>
+    <Journey/>
+    </main>
+  );
+};
 
-export default AboutPage
+export default AboutPage;

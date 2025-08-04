@@ -90,3 +90,52 @@ export const featuredProjects = [
     role: "Full-Stack Developer",
   },
 ];
+
+export const journeyItems = [
+  {
+    title: "2019: Spark Ignited",
+    description:
+      "At 17 in Tabriz, I discovered SoloLearn and wrote my first C++ code on my phone. It felt like unlocking a superpower, building apps with logic alone. ⚽",
+  },
+  {
+    title: "2020: Web Dev Beginnings",
+    description:
+      "Got my first laptop and dove into HTML, CSS, and JavaScript. Built my first static websites, fueled by Nescafé and late-night curiosity.",
+  },
+  {
+    title: "2021: Full-Stack Leap",
+    description:
+      "Moved to Rasht for Software Engineering at Gilan University, diving into React, Node.js, and full-stack dev. My laptop became my best friend.",
+  },
+  {
+    title: "2022: Real-Time Challenges",
+    description:
+      "Tackled WebSocket and Socket.IO to build real-time apps like a chat application. Debugging connections was tough but taught me the power of persistence.",
+  },
+  {
+    title: "2023: Sabzlearn Triumph",
+    description:
+      "Built Sabzlearn, a full-stack e-learning platform with course management, admin dashboards, and user engagement features—a proud milestone!",
+  },
+  {
+    title: "2024: DevOps Exploration",
+    description:
+      "Started mastering Docker and CI/CD pipelines, streamlining workflows for projects like TaskFlow. The terminal became my new playground.",
+  },
+  {
+    title: "2025: Graduation & Beyond",
+    description:
+      "Graduating this summer, I’m chasing DevOps mastery—Docker, Kubernetes, CI/CD—and ready to build scalable systems in a full-time role. ⚽",
+  },
+  {
+    title: "2026: Leading the Future",
+    description:
+      "Aiming to lead DevOps projects or launch my own startup, building seamless, scalable systems while still coding at 2 AM with Nescafé in hand.",
+  },
+];
+
+export const techStack = [
+  { category: "Frontend", techs: ["html", "css", "js", "react", "nextjs", "typescript", "tailwind", "daisyui", "shadcnui", "mui", "radixui", "redux", "zustand"] },
+  { category: "Backend", techs: ["nodejs", "express", "mongodb", "postgresql", "redis", "prisma", "nestjs", "graphql", "socketio"] },
+  { category: "Tools & Others", techs: ["git", "github", "docker", "linux", "jest", "framermotion", "reactnative"] },
+];
