@@ -116,21 +116,21 @@ const Hero = () => {
         >
           <Link
             href="/projects"
-            className="btn btn-accent btn-lg text-primary-content font-semibold hover:bg-accent-focus hover:shadow-[0_0_16px_rgba(255,255,255,0.8)] animate-pulse hover:animate-none transition-all duration-300"
+            className="btn btn-accent btn-lg w-full sm:w-auto text-primary-content font-semibold hover:bg-accent-focus hover:shadow-[0_0_16px_rgba(255,255,255,0.8)] animate-pulse hover:animate-none transition-all duration-300"
           >
             <FaRocket className="mr-2" size={24} />
             Explore My Projects
           </Link>
           <Link
             href="https://github.com/amirrajj-dev"
-            className="btn btn-soft btn-accent btn-lg"
+            className="btn btn-soft btn-accent btn-lg w-full sm:w-auto"
           >
             <FaGithub className="mr-2" size={24} />
             View My GitHub
           </Link>
           <button
             onClick={() => goToContactForm()}
-            className="btn btn-outline btn-primary btn-lg"
+            className="btn btn-outline btn-primary btn-lg w-full sm:w-auto"
           >
             <FaHandshake className="mr-2" size={24} />
             Let’s Connect

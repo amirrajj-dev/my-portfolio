@@ -91,9 +91,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
           <div className="flex flex-wrap justify-center gap-3 mb-6">
             {techs.map((tech, i) => (
-              <motion.a
+              <motion.div
                 key={i}
-                href={`https://skillicons.dev`}
                 custom={i}
                 variants={iconVariants}
                 initial="hidden"
@@ -104,16 +103,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                   boxShadow: "0 0 12px rgba(255,255,255,0.6)",
                 }}
                 className="h-10 flex flex-wrap justify-center gap-3 mb-6 overflow-hidden"
-                target="_blank"
-                rel="noopener noreferrer"
               >
-                <img
-                  src={`https://skillicons.dev/icons?i=${tech}&theme=dark`}
+                <Image
+                  src={`/techs/${tech}.svg`}
                   alt={`${tech} icon`}
                   className="size-8 object-contain"
                   draggable={false}
+                  width={32}
+                  height={32}
                 />
-              </motion.a>
+              </motion.div>
             ))}
           </div>
 

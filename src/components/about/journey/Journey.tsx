@@ -9,15 +9,11 @@ import { journeyItems } from "@/data/data";
 const Journey = () => {
   return (
     <motion.section
-      custom={6}
       initial="hidden"
-      whileInView="visible"
+      animate="visible"
       viewport={{ once: true, amount: .1 }}
       variants={aboutPageSectionVariants}
       className="relative min-h-[60vh] py-12 backdrop-blur-xl rounded-xl"
-      animate={{
-        transition: { duration: 3, repeat: Infinity, repeatType: "reverse" },
-      }}
     >
       <BackgroundParticles count={100} speed={100} />
       <div className="relative z-10 max-w-4xl mx-auto text-center">

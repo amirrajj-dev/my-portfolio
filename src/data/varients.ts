@@ -52,7 +52,7 @@ const aboutPageSectionVariants: Variants = {
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.3, type: "spring", stiffness: 120, damping: 14 },
+    transition: { delay: i * 0.2, type: "spring", stiffness: 120, damping: 14 },
   }),
 };
 

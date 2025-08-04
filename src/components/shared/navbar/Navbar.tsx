@@ -26,7 +26,7 @@ const Navbar = () => {
         className="bg-base-300 border-b border-accent p-4 mx-auto max-w-7xl rounded-md mt-4 z-50"
       >
         <div className="flex items-center justify-between">
-          <Logo/>
+          <Logo />
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center gap-6">
             <ThemeMenu />
@@ -68,9 +68,9 @@ const Navbar = () => {
                   className="drawer-overlay"
                 ></label>
                 <ul className="menu p-4 w-80 md:w-96 bg-base-300 text-base-content h-full space-y-2">
-                 <div className="flex items-center justify-center">
-                  <Logo/>
-                 </div>
+                  <div className="flex items-center justify-center">
+                    <Logo />
+                  </div>
                   {navItems.map(({ href, icon, name }, index) => (
                     <motion.div
                       key={index}
@@ -79,6 +79,12 @@ const Navbar = () => {
                     >
                       <Link
                         href={href}
+                        onClick={() => {
+                          const drawer = document.getElementById(
+                            "my-drawer"
+                          ) as HTMLInputElement;
+                          if (drawer) drawer.checked = false;
+                        }}
                         className={`flex items-center gap-2 btn btn-accent ${
                           pathname === href ? "" : "btn-soft"
                         }`}
@@ -88,10 +94,10 @@ const Navbar = () => {
                       </Link>
                     </motion.div>
                   ))}
+
                   <div className="flex items-center justify-center">
                     <ThemeMenu />
                   </div>
-                  
                 </ul>
               </div>
             </div>

@@ -1,9 +1,14 @@
-import React from 'react'
+import Hero from "@/components/skills/hero/Hero";
+import Skills from "@/components/skills/skills/Skills";
 
-const SillsPage = () => {
+const SkillsPage = () => {
+
   return (
-    <div>SillsPage</div>
-  )
-}
+    <main className="min-h-screen bg-base-100 relative overflow-hidden">
+      <Hero />
+      <Skills/>
+    </main>
+  );
+};
 
-export default SillsPage
+export default SkillsPage;

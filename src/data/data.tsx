@@ -60,7 +60,7 @@ export const featuredProjects = [
       "A cutting-edge e-learning platform with dynamic courses and a scalable backend.",
     href: "https://github.com/amirrajj-dev/sabzlearn-refactored",
     image: "/projects/sabzlearn.png",
-    techs: ["nextjs", "ts", "tailwind", "prisma", "docker"],
+    techs: ["next", "ts", "tailwind", "prisma", "docker"],
     role: "Full-Stack Developer",
   },
   {
@@ -69,7 +69,7 @@ export const featuredProjects = [
       "A vibrant music streaming app with real-time chat and sleek UI.",
     href: "https://github.com/amirrajj-dev/echoTune",
     image: "/projects/echoTune.png",
-    techs: ["react", "ts", "tailwind", "nodejs"],
+    techs: ["react", "ts", "tailwind", "node"],
     role: "FUll-Stack Developer",
   },
   {
@@ -77,7 +77,7 @@ export const featuredProjects = [
     description: "A real-time chat powerhouse built with the MERN stack.",
     href: "https://github.com/amirrajj-dev/mern-chat-app",
     image: "/projects/mern-chat-app.png",
-    techs: ["mongodb", "express", "react", "nodejs"],
+    techs: ["mongodb", "express", "react", "node"],
     role: "Full-Stack Developer",
   },
   {
@@ -86,7 +86,7 @@ export const featuredProjects = [
       "A slick todo app with seamless task management and modern design.",
     href: "https://github.com/amirrajj-dev/TaskFlow",
     image: "/projects/taskFlow.png",
-    techs: ["nextjs", "ts", "prisma", "postgres", "tailwind"],
+    techs: ["next", "ts", "prisma", "postgres", "tailwind"],
     role: "Full-Stack Developer",
   },
 ];
@@ -135,7 +135,7 @@ export const journeyItems = [
 ];
 
 export const techStack = [
-  { category: "Frontend", techs: ["html", "css", "js", "react", "nextjs", "typescript", "tailwind", "daisyui", "shadcnui", "mui", "radixui", "redux", "zustand"] },
-  { category: "Backend", techs: ["nodejs", "express", "mongodb", "postgresql", "redis", "prisma", "nestjs", "graphql", "socketio"] },
-  { category: "Tools & Others", techs: ["git", "github", "docker", "linux", "jest", "framermotion", "reactnative"] },
+  { category: "Frontend", techs: ["html", "css", "js", "react", "next", "ts", "tailwind", "mui", "redux" , "socket.io"] },
+  { category: "Backend", techs: ["node", "express", "mongodb", "postgres", "redis", "prisma", "nest", "graphql"] },
+  { category: "Tools & Others", techs: ["git", "github", "docker", "linux", "jest" , "react" , "bun" , "vite"] },
 ];
