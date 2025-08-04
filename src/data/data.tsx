@@ -32,7 +32,6 @@ export const navItems = [
   { name: "Skills", href: "/skills", icon: <FaLaptopCode /> },
 ];
 
-
 export const sampleCode = `import { useState, useEffect } from 'react';
 
 const Portfolio = () => {
@@ -135,7 +134,119 @@ export const journeyItems = [
 ];
 
 export const techStack = [
-  { category: "Frontend", techs: ["html", "css", "js", "react", "next", "ts", "tailwind", "mui", "redux" , "socket.io"] },
-  { category: "Backend", techs: ["node", "express", "mongodb", "postgres", "redis", "prisma", "nest", "graphql"] },
-  { category: "Tools & Others", techs: ["git", "github", "docker", "linux", "jest" , "react" , "bun" , "vite"] },
+  {
+    category: "Frontend",
+    techs: [
+      "html",
+      "css",
+      "js",
+      "react",
+      "next",
+      "ts",
+      "tailwind",
+      "mui",
+      "redux",
+      "socket.io",
+    ],
+  },
+  {
+    category: "Backend",
+    techs: [
+      "node",
+      "express",
+      "mongodb",
+      "postgres",
+      "redis",
+      "prisma",
+      "nest",
+      "graphql",
+    ],
+  },
+  {
+    category: "Tools & Others",
+    techs: [
+      "git",
+      "github",
+      "docker",
+      "linux",
+      "jest",
+      "react",
+      "bun",
+      "vite",
+      "expo",
+      "framer-motion"
+    ],
+  },
+];
+
+export const allProjects = [
+  {
+    name: "Sabzlearn",
+    description:
+      "A cutting-edge e-learning platform with dynamic courses and a scalable backend.",
+    href: "https://github.com/amirrajj-dev/sabzlearn-refactored",
+    image: "/projects/sabzlearn.png",
+    techs: ["next", "ts", "tailwind", "prisma", "docker"],
+    role: "Full-Stack Developer",
+    liveLink: "https://sabzlearn.onrender.com",
+  },
+  {
+    name: "EchoTune",
+    description:
+      "A vibrant music streaming app with real-time chat and sleek UI.",
+    href: "https://github.com/amirrajj-dev/echoTune",
+    image: "/projects/echoTune.png",
+    techs: ["react", "ts", "tailwind", "framer-motion"],
+    role: "FUll-Stack Developer",
+    liveLink: "https://echotune-i7jx.onrender.com",
+  },
+  {
+    name: "Chat-Application",
+    description: "A real-time chat powerhouse built with the MERN stack.",
+    href: "https://github.com/amirrajj-dev/mern-chat-app",
+    image: "/projects/mern-chat-app.png",
+    techs: ["mongodb", "express", "react", "node"],
+    role: "Full-Stack Developer",
+    liveLink: "https://mern-chat-app-pvv3.onrender.com",
+  },
+  {
+    name: "TaskFlow",
+    description:
+      "A slick todo app with seamless task management and modern design.",
+    href: "https://github.com/amirrajj-dev/TaskFlow",
+    image: "/projects/taskFlow.png",
+    techs: ["next", "ts", "prisma", "postgres", "framer-motion"],
+    role: "Full-Stack Developer",
+    liveLink: "https://task-flow-tau-eight.vercel.app/",
+  },
+  {
+    name: "Rn-Todo-App",
+    description:
+      "full-stack mobile app for task and notification management, built with React Native, Expo, and TypeScript.",
+    href: "https://github.com/amirrajj-dev/rn-todo-app",
+    image: "/projects/rn-todo-app.jpg",
+    techs: ["react", "expo", "ts", "mongodb"],
+    role: "Full-Stack Developer",
+    liveLink: "https://task-flow-tau-eight.vercel.app/",
+  },
+  {
+    name: "Admin-Dashboard",
+    description:
+      "A professional and feature-rich admin dashboard built with React, TypeScript, Tailwind CSS, and several other powerful libraries., and TypeScript.",
+    href: "https://github.com/amirrajj-dev/rn-todo-app",
+    image: "/projects/admin-dashboard.png",
+    techs: ["react", "", "ts", "mongodb"],
+    role: "Full-Stack Developer",
+    liveLink: "https://super-professional-admin-dashboard.vercel.app",
+  },
+    {
+    name: "Next-Social",
+    description:
+      "A professional and feature-rich admin dashboard built with React, TypeScript, Tailwind CSS, and several other powerful libraries., and TypeScript.",
+    href: "https://github.com/amirrajj-dev/next-social",
+    image: "/projects/next-social.png",
+    techs: ["react", "next", "mongodb", "node"],
+    role: "Full-Stack Developer",
+    liveLink: "",
+  }
 ];

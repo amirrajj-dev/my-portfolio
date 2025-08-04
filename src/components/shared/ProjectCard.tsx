@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
 import { motion, Variants } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 interface ProjectCardProps {
   image: string;
@@ -11,8 +12,8 @@ interface ProjectCardProps {
   role: string;
   techs: string[];
   href: string;
+  liveLink?: string;
 }
-
 const iconVariants: Variants = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: (i: number) => ({
@@ -38,7 +39,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   name,
   role,
   techs,
+  liveLink
 }) => {
+  const pathname = usePathname()
   return (
     <Tilt
       tiltMaxAngleX={10}
@@ -51,8 +54,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <motion.div
         variants={sectionVariants}
         initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
+        animate="visible"
         className="relative bg-base-100 bg-opacity-70 backdrop-blur-md border border-gray-700 rounded-2xl p-6 w-full sm:max-w-md sm:mx-auto shadow-[...]"
       >
         {/* Soft gradient overlay */}
@@ -125,13 +127,27 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             >
               View on GitHub
             </Link>
-            <Link
+           {pathname !== "/projects" && (
+             <Link
               href="/projects"
               className="btn btn-ghost btn-sm text-accent hover:bg-accent/20 hover:text-accent-focus rounded-lg px-5 py-2.5 transition-colors duration-300"
             >
               View All Projects
             </Link>
+           )}
           </div>
+          
+              {liveLink && (
+              <Link
+                href={liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary absolute top-4 right-4 btn-sm font-semibold rounded-lg px-5 py-2.5 hover:shadow-[0_0_20px_rgba(255,255,255,0.8)] focus:outline-none focus:ring-4 focus:ring-secondary/60 transition-shadow duration-300"
+              >
+                Live Demo
+                <span className="size-2 rounded-full bg-base-200 animate-pulse"></span>
+              </Link>
+            )}
         </div>
       </motion.div>
     </Tilt>
