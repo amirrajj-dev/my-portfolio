@@ -9,8 +9,8 @@ const FeaturedProjects = () => {
     <motion.section
       custom={1}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
+      animate="visible"
+      // viewport={{ once: true, amount: 0.1 }}
       variants={sectionVariants}
       className="p-6 py-16 bg-gradient-to-br from-base-300/90 to-base-200/80 relative overflow-hidden"
     >

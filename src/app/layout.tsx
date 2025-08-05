@@ -11,7 +11,10 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   icons: {
-    icon: "/icon.png",
+     icon: [
+      { url: "/logo/favicon.ico", type: "image/x-icon" },
+      { url: "/logo/icon.png", type: "image/png" },
+    ]
   },
   robots: {
     index: true,

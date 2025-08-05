@@ -249,5 +249,15 @@ export const allProjects = [
     techs: ["react", "next", "mongodb", "node"],
     role: "Full-Stack Developer",
     liveLink: "",
+  },
+   {
+    name: "My-Portfolio",
+    description:
+      "My personal portfolio website, showcasing my skills, projects, and journey. Built with modern technologies and designed for a smooth, responsive user experience.",
+    href: "https://github.com/amirrajj-dev/my-portfolio",
+    image: "/projects/portfolio.png",
+    techs: ["ts", "next", "framer-motion", "daisyui"],
+    role: "Full-Stack Developer",
+    liveLink: "https://my-portfolio-ten-vert-87.vercel.app",
   }
 ];

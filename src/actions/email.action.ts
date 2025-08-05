@@ -77,7 +77,7 @@ export const sendEmail = async (formData: {
     };
   } catch (error) {
     console.error("Email error:", error);
-    console.log(error.message);
+    console.log(error);
     return {
       success: false,
       message: "Failed to send email",

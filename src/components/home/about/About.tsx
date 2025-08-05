@@ -23,7 +23,21 @@ const About: React.FC = () => (
         variants={sectionVariants}
         className="mb-6 text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent drop-shadow-[0_3px_8px_rgba(0,0,0,0.4)]"
       >
-        {Array.from("About Me").map((char, i) => (
+        {Array.from("About").map((char, i) => (
+          <motion.span
+            key={i}
+            custom={i}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={textVariants}
+            className="inline-block"
+          >
+            {char}
+          </motion.span>
+        ))}
+        {"  "}
+        {Array.from("Me").map((char, i) => (
           <motion.span
             key={i}
             custom={i}

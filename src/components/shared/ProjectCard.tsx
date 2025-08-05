@@ -23,9 +23,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   name,
   role,
   techs,
-  liveLink
+  liveLink,
 }) => {
-  const pathname = usePathname()
+  const pathname = usePathname();
   return (
     <Tilt
       tiltMaxAngleX={10}
@@ -84,20 +84,24 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                whileHover={{
-                  scale: 1.25,
-                  boxShadow: "0 0 12px rgba(255,255,255,0.6)",
-                }}
-                className="h-10 flex flex-wrap justify-center gap-3 mb-6 overflow-hidden"
+                whileHover={{ scale: 1.15 }}
+                className="tooltip tooltip-top"
+                data-tip={tech.charAt(0).toUpperCase() + tech.slice(1)} // capitalize tooltip
               >
-                <Image
-                  src={`/techs/${tech}.svg`}
-                  alt={`${tech} icon`}
-                  className="size-8 object-contain"
-                  draggable={false}
-                  width={32}
-                  height={32}
-                />
+                <div className="bg-base-300 p-2 rounded-lg shadow-md">
+                  <Image
+                    src={
+                      tech === "daisyui"
+                        ? `/techs/${tech}.png`
+                        : `/techs/${tech}.svg`
+                    }
+                    alt={`${tech} icon`}
+                    className="size-6 sm:size-7 object-contain"
+                    draggable={false}
+                    width={28}
+                    height={28}
+                  />
+                </div>
               </motion.div>
             ))}
           </div>
@@ -111,27 +115,27 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             >
               View on GitHub
             </Link>
-           {pathname !== "/projects" && (
-             <Link
-              href="/projects"
-              className="btn btn-ghost btn-sm text-accent hover:bg-accent/20 hover:text-accent-focus rounded-lg px-5 py-2.5 transition-colors duration-300"
-            >
-              View All Projects
-            </Link>
-           )}
-          </div>
-          
-              {liveLink && (
+            {pathname !== "/projects" && (
               <Link
-                href={liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-secondary absolute top-4 right-4 btn-sm font-semibold rounded-lg px-5 py-2.5 hover:shadow-[0_0_20px_rgba(255,255,255,0.8)] focus:outline-none focus:ring-4 focus:ring-secondary/60 transition-shadow duration-300"
+                href="/projects"
+                className="btn btn-ghost btn-sm text-accent hover:bg-accent/20 hover:text-accent-focus rounded-lg px-5 py-2.5 transition-colors duration-300"
               >
-                Live Demo
-                <span className="size-2 rounded-full bg-base-200 animate-pulse"></span>
+                View All Projects
               </Link>
             )}
+          </div>
+
+          {liveLink && (
+            <Link
+              href={liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary absolute top-4 right-4 btn-sm font-semibold rounded-lg px-5 py-2.5 hover:shadow-[0_0_20px_rgba(255,255,255,0.8)] focus:outline-none focus:ring-4 focus:ring-secondary/60 transition-shadow duration-300"
+            >
+              Live Demo
+              <span className="size-2 rounded-full bg-base-200 animate-pulse"></span>
+            </Link>
+          )}
         </div>
       </motion.div>
     </Tilt>
