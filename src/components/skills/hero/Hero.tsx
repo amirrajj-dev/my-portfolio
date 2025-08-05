@@ -20,7 +20,7 @@ const Hero = () => {
       initial="hidden"
       animate={"visible"}
       variants={aboutPageSectionVariants}
-      className="p-6 bg-gradient-to-br from-base-300/90 to-base-200/80 backdrop-blur-xl py-10 rounded-xl"
+      className="p-6 bg-gradient-to-br from-base-300/90 to-base-200/80 backdrop-blur-xl py-10 rounded-xl overflow-hidden"
     >
       <BackgroundParticles count={14} speed={2.8} />
       <div className="relative z-10 max-w-4xl mx-auto text-center">

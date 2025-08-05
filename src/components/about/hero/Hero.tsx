@@ -42,8 +42,9 @@ const Hero = () => {
               key={index}
               custom={index}
               initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
+              animate="visible"
+              // whileInView="visible"
+              // viewport={{ once: true }}
               variants={aboutPageTextVariants}
               className="inline-block"
             >
@@ -56,8 +57,7 @@ const Hero = () => {
               key={index}
               custom={index}
               initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
+              animate="visible"
               variants={aboutPageTextVariants}
               className="inline-block"
             >
@@ -68,7 +68,8 @@ const Hero = () => {
         <motion.h2
           variants={aboutPageSubtitleVariants}
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
+          viewport={{once : true , amount : .3}}
           className="text-xl md:text-2xl text-base-content mb-6"
         >
           {Array.from("Curious Builder, Coffee Coder").map((char, index) => (

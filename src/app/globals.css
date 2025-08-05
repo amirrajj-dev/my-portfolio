@@ -6,3 +6,25 @@
 .border-gradient-to-r {
   border-image: linear-gradient(to right, var(--color-primary-focus), var(--color-accent-focus)) 1;
 }
+
+.Toastify__toast-theme--light, .Toastify__toast-theme--colored.Toastify__toast--default{
+    @apply !p-6 !bg-accent !text-base-content
+  }
+  .Toastify__close-button , .Toastify__close-button--light{
+    @apply !text-accent-content
+  }
+
+  .Toastify__toast svg , .Toastify__toast-theme--light svg , .Toastify__toast--success svg {
+    @apply fill-accent-content
+  }
+
+  .Toastify__toast , .Toastify__toast-theme--light , .Toastify__toast--success {
+    @apply !text-accent-content
+  }
+
+  .Toastify__progress-bar , .Toastify__progress-bar--animated , .Toastify__progress-bar-theme--light , .Toastify__progress-bar--success {
+    @apply !bg-accent-content
+  }
+.card-pattern {
+  background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23ffffff" fill-opacity="0.06"%3E%3Cpath d="M0 0h2v2H0zM18 0h2v2h-2zM0 18h2v2H0zM18 18h2v2h-2z"/%3E%3C/g%3E%3C/svg%3E');
+}

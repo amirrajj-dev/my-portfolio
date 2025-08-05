@@ -47,12 +47,12 @@ const textVariants: Variants = {
   }),
 };
 
-const aboutPageSectionVariants: Variants = {
+const aboutPageSectionVariants : Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.2, type: "spring", stiffness: 120, damping: 14 },
+    transition: { delay: i * 0.4, type: "spring", stiffness: 120, damping: 14 },
   }),
 };
 
@@ -79,6 +79,16 @@ const aboutPageLetterVariants: Variants = {
   visible: { opacity: 1, y: 0 },
 };
 
+const cardVariants: Variants = {
+  hidden: { opacity: 0, x: 0, rotate: 0 },
+  visible: (i: number) => ({
+    opacity: 1,
+    x: 0,
+    rotate: 0,
+    transition: { delay: i * 0.3, type: "spring", stiffness: 120, damping: 14 },
+  }),
+}
+
 export {
   codeLineVariants,
   codeEditorContainerVariants,
@@ -88,4 +98,5 @@ export {
   aboutPageTextVariants,
   aboutPageSubtitleVariants,
   aboutPageLetterVariants,
+  cardVariants
 };

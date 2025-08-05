@@ -147,6 +147,7 @@ export const techStack = [
       "mui",
       "redux",
       "socket.io",
+      "bootstrap"
     ],
   },
   {
@@ -235,7 +236,7 @@ export const allProjects = [
       "A professional and feature-rich admin dashboard built with React, TypeScript, Tailwind CSS, and several other powerful libraries., and TypeScript.",
     href: "https://github.com/amirrajj-dev/rn-todo-app",
     image: "/projects/admin-dashboard.png",
-    techs: ["react", "", "ts", "mongodb"],
+    techs: ["react", "ts", "framer-motion"],
     role: "Full-Stack Developer",
     liveLink: "https://super-professional-admin-dashboard.vercel.app",
   },

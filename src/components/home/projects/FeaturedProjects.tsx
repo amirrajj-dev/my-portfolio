@@ -1,6 +1,5 @@
 "use client";
 import { motion, Variants } from "framer-motion";
-import BackgroundParticles from "@/components/shared/BackgroundParticles";
 import ProjectCard from "@/components/shared/ProjectCard";
 import { featuredProjects } from "@/data/data";
 
@@ -21,10 +20,8 @@ const FeaturedProjects = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
       variants={sectionVariants}
-      className="p-6 py-16 bg-gradient-to-br from-base-300/90 to-base-200/80 backdrop-blur-lg rounded-xl shadow-[0_8px_24px_rgba(0,0,0,0.4)] relative overflow-hidden"
+      className="p-6 py-16 bg-gradient-to-br from-base-300/90 to-base-200/80 relative overflow-hidden"
     >
-      {/* Background Particles */}
-      <BackgroundParticles count={10} speed={3.5} />
       <div className="relative z-10">
         <motion.h2
           custom={2}

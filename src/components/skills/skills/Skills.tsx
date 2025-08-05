@@ -6,6 +6,7 @@ import { FaReact, FaServer, FaTools } from "react-icons/fa";
 import { motion, Variants } from "framer-motion";
 import { aboutPageSectionVariants } from "@/data/varients";
 import Image from "next/image";
+import BackgroundParticles from "@/components/shared/BackgroundParticles";
 
 const iconVariants: Variants = {
   hidden: { opacity: 0, scale: 0.8 },
@@ -96,6 +97,7 @@ const Skills = () => {
           transition={{ duration: 0.4 }}
           className="w-full md:w-3/4 bg-gradient-to-br from-base-300/90 to-base-200/80 backdrop-blur-lg border border-base-content/10 rounded-2xl shadow-xl p-6 md:p-10"
         >
+          <BackgroundParticles count={100}/>
           <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
             {techStack
               .find((stack) => stack.category === currentCategory)
@@ -105,8 +107,7 @@ const Skills = () => {
                   custom={index}
                   variants={iconVariants}
                   initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
+                  animate="visible"
                   whileHover={{ scale: 1.25 }}
                   className="tooltip tooltip-accent transition-all duration-300 hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.4)]"
                   data-tip={tech.toUpperCase()}

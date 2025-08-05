@@ -13,7 +13,7 @@ const Contact = () => {
         animate="visible"
         variants={sectionVariants}
         id="contact"
-        className="relative min-h0[40vh] p-6 py-16"
+        className="relative min-h0[40vh] p-6 py-16 overflow-hidden"
       >
         <BackgroundParticles count={40} speed={3.5} />
         <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary text-center mb-10 drop-shadow-[0_4px_10px_rgba(0,0,0,0.5)]">

@@ -3,6 +3,7 @@ import About from "@/components/home/about/About";
 import Projects from "@/components/home/projects/FeaturedProjects";
 import Contact from "@/components/home/contact/ui/Contact";
 import Footer from "@/components/home/footer/Footer";
+import { ToastContainer } from "react-toastify";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
      <Projects/>
      <Contact/>
      <Footer/>
+     <ToastContainer/>
     </main>
   );
 }

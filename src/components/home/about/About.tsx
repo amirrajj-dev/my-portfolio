@@ -14,7 +14,7 @@ const About: React.FC = () => (
     variants={sectionVariants}
     className="relative min-h-[50vh] py-16 px-6 text-center overflow-hidden"
   >
-    <BackgroundParticles count={8} speed={4} />
+    <BackgroundParticles count={16} speed={4} />
 
     <div className="relative z-10 max-w-3xl mx-auto">
       <motion.h2

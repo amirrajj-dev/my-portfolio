@@ -1,10 +1,12 @@
+import BackgroundParticles from '@/components/shared/BackgroundParticles'
 import Link from 'next/link'
 import React from 'react'
 import { FaGithub } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-     <footer className="bg-gradient-to-br from-base-300/90 to-base-200/80 backdrop-blur-md py-6 text-center">
+     <footer className="bg-gradient-to-br from-base-300/90 to-base-200/80 backdrop-blur-md py-6 text-center overflow-hidden">
+        <BackgroundParticles/>
         <div className="container mx-auto">
           <div className="flex justify-center gap-4 mb-4">
             <Link

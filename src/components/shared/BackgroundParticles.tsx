@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { useMemo } from "react";
 
 interface BackgroundParticlesProps {
   count?: number;
@@ -7,29 +8,46 @@ interface BackgroundParticlesProps {
 }
 
 const BackgroundParticles: React.FC<BackgroundParticlesProps> = ({
-  count = 8,
-  speed = 4,
+  count = 25,
+  speed = 6,
 }) => {
+  const particles = useMemo(
+    () =>
+      Array.from({ length: count }, () => ({
+        left: Math.random() * 100, // 0% to 100%
+        top: Math.random() * 100, // 0% to 100%
+        delay: Math.random() * 3, // seconds
+        size: Math.random() * 4 + 2, // 2px - 6px
+        blur: Math.random() > 0.5, // some are blurrier
+      })),
+    [count]
+  );
+
   return (
     <>
-      {[...Array(count)].map((_, i) => (
+      {particles.map((p, i) => (
         <motion.div
           key={i}
           animate={{
             y: [-10, 10],
             opacity: [0.2, 0.6, 0.2],
-            scale: [0.8, 1.1, 0.8],
+            scale: [0.9, 1.1, 0.9],
           }}
           transition={{
             repeat: Infinity,
             duration: speed,
             ease: "easeInOut",
-            delay: i * 0.5,
+            delay: p.delay,
           }}
-          className="absolute bg-gradient-to-r from-primary/30 to-accent/30 size-2 rounded-full shadow-[0_0_10px_rgba(255,255,255,0.3)]"
+          className={`absolute rounded-full ${
+            p.blur ? "blur-sm opacity-50" : ""
+          } shadow-[0_0_10px_rgba(255,255,255,0.1)]`}
           style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`
+            left: `${p.left}%`,
+            top: `${p.top}%`,
+            width: `${p.size}px`,
+            height: `${p.size}px`,
+            background: `radial-gradient(circle, rgba(255,184,108,0.6) 0%, rgba(35,37,48,0.2) 100%)`,
           }}
         />
       ))}
