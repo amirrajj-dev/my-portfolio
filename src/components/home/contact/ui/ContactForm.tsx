@@ -1,18 +1,10 @@
 "use client";
 import { useState } from "react";
-import { motion, Variants } from "framer-motion";
+import { motion} from "framer-motion";
 import { FaPaperPlane } from "react-icons/fa";
 import { toast, ToastOptions } from "react-toastify";
 import { sendEmail } from "@/actions/email.action";
-
-const fieldVariants: Variants = {
-  hidden: { opacity: 0, x: -20 },
-  visible: (i: number) => ({
-    opacity: 1,
-    x: 0,
-    transition: { delay: i * 0.1, type: "spring", stiffness: 100, damping: 15 },
-  }),
-};
+import { fieldVariants } from "@/data/varients";
 
 const toastOptions : ToastOptions = {
   autoClose: 5000,

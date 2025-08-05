@@ -69,7 +69,7 @@ const Hero = () => {
           variants={aboutPageSubtitleVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{once : true , amount : .3}}
+          viewport={{ once: true, amount: 0.3 }}
           className="text-xl md:text-2xl text-base-content mb-6"
         >
           {Array.from("Curious Builder, Coffee Coder").map((char, index) => (
@@ -83,17 +83,14 @@ const Hero = () => {
           variants={aboutPageSectionVariants}
           className="text-lg md:text-xl text-base-content/50 max-w-2xl mx-auto mb-6 leading-relaxed"
         >
-          Hey, I’m Amirhosein, a {new Date().getFullYear() - 2002}-year-old
-          full-stack developer from Tabriz, born in 2002. My coding journey
-          kicked off at 17 with SoloLearn on my phone, typing C++ in a tiny
-          editor—pure magic! Now in Rasht, wrapping up my Software Engineering
-          degree at Gilan University (graduating summer 2025), I’m obsessed with
-          crafting seamless web apps. My proudest win? Building{" "}
-          <span className="text-primary font-semibold">Sabzlearn</span>, a
-          full-stack e-learning platform with course management and admin
-          dashboards. When I’m not coding at 2 AM (fueled by Nescafé), I’m
-          cheering for CR7, gaming <span className="italic">God of War</span>,
-          or binge-watching Korean series.
+          Hi, I’m Amirhosein, a full-stack developer from Tabriz, currently
+          based in Rasht. I’m passionate about building efficient and scalable
+          web applications using the latest technologies. Known for being a fast
+          learner and a reliable problem solver, I approach every challenge with
+          discipline and a growth mindset. I continuously strive to improve
+          myself, even if it’s just by 1% each day. Outside of work, I enjoy
+          bodybuilding, watching movies and series, and immersing myself in
+          music — all of which help me maintain balance and stay inspired.
         </motion.p>
         <motion.div
           custom={4}
@@ -104,12 +101,19 @@ const Hero = () => {
             ☕ Nescafé-Powered
           </span>
           <span className="badge badge-outline badge-accent text-xs">
-            🌙 2 AM Debugger
+            🌙 Late Night Coder
           </span>
           <span className="badge badge-outline badge-secondary text-xs">
-            ⚽ CR7 Fan
+            🎧 Music Addict
+          </span>
+          <span className="badge badge-outline badge-primary text-xs">
+            🚀 Always Improving
+          </span>
+          <span className="badge badge-outline badge-accent text-xs">
+            💡 Problem Solver
           </span>
         </motion.div>
+
         <motion.div
           custom={5}
           variants={aboutPageSectionVariants}

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { techStack } from "@/data/data";
 import { FaReact, FaServer, FaTools } from "react-icons/fa";
 import { motion, Variants } from "framer-motion";
-import { aboutPageSectionVariants } from "@/data/varients";
+import { aboutPageSectionVariants, buttonVariants } from "@/data/varients";
 import Image from "next/image";
 import BackgroundParticles from "@/components/shared/BackgroundParticles";
 
@@ -19,15 +19,6 @@ const iconVariants: Variants = {
       stiffness: 180,
       damping: 14,
     },
-  }),
-};
-
-const buttonVariants: Variants = {
-  hidden: { opacity: 0, y: 10 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.1, type: "spring", stiffness: 120, damping: 12 },
   }),
 };
 

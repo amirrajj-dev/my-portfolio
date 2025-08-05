@@ -2,8 +2,9 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import { iconVariants, sectionVariants } from "@/data/varients";
 
 interface ProjectCardProps {
   image: string;
@@ -14,23 +15,6 @@ interface ProjectCardProps {
   href: string;
   liveLink?: string;
 }
-const iconVariants: Variants = {
-  hidden: { opacity: 0, scale: 0.8 },
-  visible: (i: number) => ({
-    opacity: 1,
-    scale: 1,
-    transition: { delay: i * 0.1, type: "spring", stiffness: 150, damping: 12 },
-  }),
-};
-
-const sectionVariants: Variants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.3, type: "spring", stiffness: 100, damping: 15 },
-  }),
-};
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   description,

@@ -3,16 +3,7 @@ import React from 'react'
 import { FaTelegram , FaEnvelope, FaGithub } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import Link from 'next/link';
-import type { Variants } from "framer-motion";
-
-const introVariants : Variants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.2, type: "spring", stiffness: 120, damping: 15 },
-  }),
-};
+import { introVariants } from '@/data/varients';
 
 const Intro = () => {
   const goToContactMeForm = ()=>{

@@ -1,16 +1,8 @@
 "use client";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import ProjectCard from "@/components/shared/ProjectCard";
 import { featuredProjects } from "@/data/data";
-
-const sectionVariants: Variants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.3, type: "spring", stiffness: 100, damping: 15 },
-  }),
-};
+import { sectionVariants } from "@/data/varients";
 
 const FeaturedProjects = () => {
   return (
