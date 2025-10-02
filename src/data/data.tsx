@@ -182,6 +182,16 @@ export const techStack = [
 
 export const allProjects = [
   {
+    name: "Trello Clone",
+    description:
+      "A modern, feature-rich project management application with real-time collaboration, task management, and beautiful UI.",
+    href: "https://github.com/amirrajj-dev/trello-clone",
+    image: "/projects/trello-clone.png",
+    techs: ["next", "ts", "tailwind", "nest", "postgres", "socket.io"],
+    role: "Full-Stack Developer",
+    liveLink: "https://trello-clone-nine-pi.vercel.app",
+  },
+  {
     name: "Sabzlearn",
     description:
       "A cutting-edge e-learning platform with dynamic courses and a scalable backend.",
