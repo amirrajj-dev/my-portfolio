@@ -187,7 +187,7 @@ export const allProjects = [
       "A modern, feature-rich project management application with real-time collaboration, task management, and beautiful UI.",
     href: "https://github.com/amirrajj-dev/trello-clone",
     image: "/projects/trello-clone.png",
-    techs: ["next", "ts", "tailwind", "nest", "postgres", "socket.io"],
+    techs: ["next", "ts", "docker", "nest", "postgres", "socket.io"],
     role: "Full-Stack Developer",
     liveLink: "https://trello-clone-nine-pi.vercel.app",
   },
