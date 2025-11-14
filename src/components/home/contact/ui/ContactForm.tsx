@@ -113,7 +113,7 @@ const ContactForm = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className="textarea border-none placeholder:text-accent textarea-bordered w-full bg-base-300/50 text-accent transition-all duration-300"
+            className="textarea border-none placeholder:text-accent textarea-bordered w-full focus:outline-none bg-base-300/50 text-accent transition-all duration-300"
             placeholder="Your message..."
             rows={5}
           />

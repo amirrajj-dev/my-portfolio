@@ -17,7 +17,7 @@ const Intro = () => {
             initial="hidden"
             animate="visible"
             variants={introVariants}
-            className="text-4xl md:text-6xl font-black bg-clip-text text-transparent bg-gradient-to-r from-accent via-primary to-accent drop-shadow-[0_4px_10px_rgba(0,0,0,0.4)]"
+            className="text-4xl pt-8 sm:pt-4 md:pt-0 md:text-6xl font-black bg-clip-text text-transparent bg-gradient-to-r from-accent via-primary to-accent drop-shadow-[0_4px_10px_rgba(0,0,0,0.4)]"
           >
             {Array.from("Amirhosein").map((char, index) => (
               <motion.span
