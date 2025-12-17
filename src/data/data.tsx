@@ -147,7 +147,7 @@ export const techStack = [
       "mui",
       "redux",
       "socket.io",
-      "bootstrap"
+      "bootstrap",
     ],
   },
   {
@@ -175,7 +175,7 @@ export const techStack = [
       "bun",
       "vite",
       "expo",
-      "framer-motion"
+      "framer-motion",
     ],
   },
 ];
@@ -250,7 +250,7 @@ export const allProjects = [
     role: "Full-Stack Developer",
     liveLink: "https://super-professional-admin-dashboard.vercel.app",
   },
-    {
+  {
     name: "Next-Social",
     description:
       "A professional and feature-rich admin dashboard built with React, TypeScript, Tailwind CSS, and several other powerful libraries., and TypeScript.",
@@ -260,7 +260,7 @@ export const allProjects = [
     role: "Full-Stack Developer",
     liveLink: "",
   },
-   {
+  {
     name: "My-Portfolio",
     description:
       "My personal portfolio website, showcasing my skills, projects, and journey. Built with modern technologies and designed for a smooth, responsive user experience.",
@@ -269,5 +269,25 @@ export const allProjects = [
     techs: ["ts", "next", "framer-motion", "daisyui"],
     role: "Full-Stack Developer",
     liveLink: "https://my-portfolio-ten-vert-87.vercel.app",
-  }
+  },
+  {
+    name: "Full-Stack E-Commerce",
+    description:
+      "A production-ready e-commerce platform featuring a mobile shopping app, admin CMS, and scalable backend with payments, authentication, and background jobs.",
+    href: "https://github.com/amirrajj-dev/expo-ecommerce",
+    image: "/projects/expo-ecommerce.png",
+    techs: [
+      "react",
+      "ts",
+      "bun",
+      "express",
+      "mongodb",
+      "redis",
+      "tailwind",
+      "daisyui",
+      "vite"
+    ],
+    role: "Full-Stack Developer",
+    liveLink: "",
+  },
 ];
