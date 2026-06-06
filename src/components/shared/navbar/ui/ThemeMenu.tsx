@@ -27,12 +27,12 @@ const ThemeMenu = () => {
   }, [themeMenuOpen, setThemeMenuOpen]);
 
   return (
-    <div className="relative" ref={menuRef}>
+    <div className="relative w-full" ref={menuRef}>
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setThemeMenuOpen(!themeMenuOpen)}
-        className="btn btn-soft btn-accent transition-all duration-300"
+        className="btn btn-soft w-full btn-accent transition-all duration-300"
       >
         <IoIosColorPalette className="text-xl" />
       </motion.button>
