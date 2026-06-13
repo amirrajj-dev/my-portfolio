@@ -75,7 +75,7 @@ export const featuredProjects = [
     name: "Whisper",
     description: "A real-time multi-platform chat application with group conversations, typing indicators, online presence, media sharing, and admin roles.",
     href: "https://github.com/amirrajj-dev/whisper",
-    image: "/projects/mern-chat-app.png",
+    image: "/projects/whisper.png",
     techs: ["next", "ts", "react", "expo", "nest", "socket.io", "mongodb", "redis" , "bun", "tailwind", "docker"],
     role: "Full-Stack Developer",
   },
