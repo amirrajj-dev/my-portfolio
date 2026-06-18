@@ -1,7 +1,7 @@
 import BackgroundParticles from '@/components/shared/BackgroundParticles'
 import Link from 'next/link'
 import React from 'react'
-import { FaGithub } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -14,6 +14,12 @@ const Footer = () => {
               className="text-accent hover:text-accent transition-colors duration-300"
             >
               <FaGithub size={28} />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/amirhosein-rajaei"
+              className="text-accent hover:text-accent transition-colors duration-300"
+            >
+              <FaLinkedin size={28} />
             </Link>
           </div>
           <p className="text-accent">

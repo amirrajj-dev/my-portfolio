@@ -1,6 +1,6 @@
 "ue client"
 import React from 'react'
-import { FaTelegram , FaEnvelope, FaGithub } from 'react-icons/fa'
+import { FaTelegram , FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import Link from 'next/link';
 import { introVariants } from '@/data/varients';
@@ -56,39 +56,36 @@ const Intro = () => {
             initial="hidden"
             animate="visible"
             variants={introVariants}
-            className="flex flex-col sm:flex-row justify-center gap-4"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md mx-auto"
           >
             <button
               onClick={goToContactMeForm}
               className="btn btn-accent btn-lg"
             >
-              <FaEnvelope className="mr-2" />
+              <FaEnvelope />
               Contact Me
             </button>
+            <Link
+              href="https://t.me/amirajj_dev"
+              className="btn btn-lg btn-primary"
+            >
+              <FaTelegram size={24} />
+              Telegram
+            </Link>
             <Link
               href="https://github.com/amirrajj-dev"
               className="btn btn-soft btn-accent btn-lg"
             >
-              <FaGithub className="mr-2" size={24} />
+              <FaGithub size={24} />
               View My GitHub
             </Link>
-          </motion.div>
-          <motion.div
-            custom={3}
-            initial="hidden"
-            animate="visible"
-            variants={introVariants}
-            className="flex items-center justify-center gap-4"
-          >
-            <motion.div>
-              <Link
-                href="https://t.me/amirajj_dev"
-                className="btn btn-lg btn-primary"
-              >
-                <FaTelegram size={24} />
-                Telegram
-              </Link>
-            </motion.div>
+            <Link
+              href="https://www.linkedin.com/in/amirhosein-rajaei"
+              className="btn btn-lg btn-secondary"
+            >
+              <FaLinkedin size={24} />
+              LinkedIn
+            </Link>
           </motion.div>
         </motion.div>
   )
