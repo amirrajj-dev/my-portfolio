@@ -80,7 +80,7 @@ const Intro = () => {
               View My GitHub
             </Link>
             <Link
-              href="https://www.linkedin.com/in/amirhosein-rajaei"
+              href="https://www.linkedin.com/in/amirhosein-rajae"
               className="btn btn-lg btn-secondary"
             >
               <FaLinkedin size={24} />

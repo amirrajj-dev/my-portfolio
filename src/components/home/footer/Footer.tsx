@@ -16,7 +16,7 @@ const Footer = () => {
               <FaGithub size={28} />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/amirhosein-rajaei"
+              href="https://www.linkedin.com/in/amirhosein-rajae"
               className="text-accent hover:text-accent transition-colors duration-300"
             >
               <FaLinkedin size={28} />
